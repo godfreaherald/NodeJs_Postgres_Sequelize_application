@@ -12,6 +12,6 @@ router.post('/addUser',userController.create_user)
 router.get('/users',userController.show_users);
 router.get('/user/:id',userController.show_user);
 //router.get('/user/:id/edit',userContorller.show_edit_user);
-router.post('/user/:id/edit',userController.edit_user);
+router.put('/user/edit/:id',userController.edit_user);
 
 module.exports = router;
